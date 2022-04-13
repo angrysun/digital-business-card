@@ -7,7 +7,6 @@ export default function Info() {
       <h1 className='title-name'>Steven Vasquez</h1>
       <h2 className='title-job'>Fullstack Developer</h2>
       <a href='https://www.stevenvasquez.me' target="_blank" rel="noreferrer" className='title-sitename'>www.stevenvasquez.me</a>
-      {/* <h4 className='title-sitename'>www.stevenvasquez.me</h4> */}
       <element className="button">
         <a href="mailto:s.vasquez85@gmail.com?subject=Getting in touch" target="_blank" rel="noreferrer" id="button-white"><i
           class="fa-solid --fa-li-margin fa-lg fa-square-envelope"></i>Email</a>

@@ -20,7 +20,7 @@ a {
 }
 
 .profile-img {
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   object-fit: cover;
   object-position: 100% 21%;
@@ -50,18 +50,16 @@ a {
   font-size: 11px;
 }
 
-.button {
+.button, #button-white, #button-linkedIn, .center-body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #button-white, #button-linkedIn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 9px 13px 9px 11px;
   font-size: 15px;
+  font-weight: 500;
   width: 130px;
   height: 38px;
   background: #FFFFFF;
@@ -82,24 +80,18 @@ a {
 }
 
 .center-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  /* margin: 20px 53px 0 53px; */
-  /* width: 400px; */
-  /* max-width: 400px; */
 }
 
 .title-about {
-  /* width: 200px; */
+  width: 280px;
   font-size: 18px;
   margin-bottom: 0;
   line-height: 24px;
 }
 
 .title-details {
-  width: 200px;
+  width: 280px;
   font-size: 11px;
   margin-top: 4px;
   line-height: 15px;
