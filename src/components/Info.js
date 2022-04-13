@@ -3,13 +3,16 @@ import profile from '../images/profile.JPG'
 export default function Info() {
   return (
     <div>
-      <img src={profile} alt="Profile Pic" />
-      <h1>Steven Vasquez</h1>
-      <h2>Fullstack Developer</h2>
-      <h4>www.stevenvasquez.me</h4>
-      <a href="mailto:s.vasquez85@gmail.com?subject=Getting in touch" target="_blank" rel="noreferrer" id="button-gray"><i
-        class="fa-solid fa-square-envelope"></i>Mail</a>
-      <a href="https://www.linkedin.com/in/stevenvasquez85/" rel="noreferrer" target="_blank" id="button-linkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <img src={profile} alt="Profile Pic" className='profile-img'/>
+      <h1 className='title-name'>Steven Vasquez</h1>
+      <h2 className='title-job'>Fullstack Developer</h2>
+      <a href='https://www.stevenvasquez.me' target="_blank" rel="noreferrer" className='title-sitename'>www.stevenvasquez.me</a>
+      {/* <h4 className='title-sitename'>www.stevenvasquez.me</h4> */}
+      <element className="button">
+        <a href="mailto:s.vasquez85@gmail.com?subject=Getting in touch" target="_blank" rel="noreferrer" id="button-white"><i
+          class="fa-solid --fa-li-margin fa-lg fa-square-envelope"></i>Email</a>
+        <a href="https://www.linkedin.com/in/stevenvasquez85/" rel="noreferrer" target="_blank" id="button-linkedIn"><i class="fa-brands --fa-li-margin fa-lg fa-linkedin"></i>LinkedIn</a>
+      </element>
     </div>
   )
 }

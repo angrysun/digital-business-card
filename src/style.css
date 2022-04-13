@@ -5,9 +5,80 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-img {
+  height: 50vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: 100% 21%;
+}
+
+.title-name, .title-job, .title-sitename {
+  text-align: center !important;
+}
+
+.title-name {
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.title-job {
+  font-weight: 400;
+  line-height: 4px;
+  color: #ffcb9a;
+  font-size: 18px;
+}
+
+.title-sitename {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-size: 10px;
+}
+
+.button {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+}
+
+#button-white, #button-linkedIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  font-size: 14px;
+  width: 124px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin: 16px 20px;
+}
+
+#button-linkedIn {
+  background-color: #287fe5;
+  color: white;
+}
+
+.--fa-li-margin {
+  margin: 0 10px 0 4px;
 }
