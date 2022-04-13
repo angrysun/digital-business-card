@@ -19,6 +19,12 @@ a {
   color: black;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .profile-img {
   height: 40vh;
   width: 100vw;
@@ -95,4 +101,17 @@ a {
   font-size: 11px;
   margin-top: 4px;
   line-height: 15px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #d5d4d8;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+#social-icon {
+  margin: 0 16px 0 16px;
+  font-size: 34px;
+  color: #918E9B;
 }
