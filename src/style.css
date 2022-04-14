@@ -38,6 +38,7 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .profile-img {
@@ -150,6 +151,12 @@ footer {
 
 #social-icon:hover {
   color: #136366;
+}
+
+.toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrg-toggle {

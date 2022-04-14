@@ -42,17 +42,19 @@ const ToggleButton = ( props ) => {
   }, className);
 
   return (
-    <div onClick={triggerToggle} className={toggleClasses}>
-      <div className="wrg-toggle-container">
-        <div className="wrg-toggle-check">
-          <span>{getIcon('checked')}</span>
+    <div className="toggles">
+      <div onClick={triggerToggle} className={toggleClasses}>
+        <div className="wrg-toggle-container">
+          <div className="wrg-toggle-check">
+            <span>{getIcon('checked')}</span>
+          </div>
+          <div className="wrg-toggle-uncheck">
+            <span>{getIcon('unchecked')}</span>
+          </div>
         </div>
-        <div className="wrg-toggle-uncheck">
-          <span>{getIcon('unchecked')}</span>
-        </div>
+        <div className="wrg-toggle-circle"></div>
+        <input type="checkbox" aria-label="Toggle Button" className="wrg-toggle-input" />
       </div>
-      <div className="wrg-toggle-circle"></div>
-      <input type="checkbox" aria-label="Toggle Button" className="wrg-toggle-input" />
     </div>
   )
 }
