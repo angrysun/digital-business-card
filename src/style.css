@@ -234,3 +234,15 @@ footer {
   box-sizing: border-box;
   transition: all .25s ease;
 }
+
+.wrg-toggle--checked .wrg-toggle-check {
+  opacity: 1;
+}
+
+.wrg-toggle--checked .wrg-toggle-uncheck {
+  opacity: 0;
+}
+
+.wrg-toggle--checked .wrg-toggle-circle {
+  left: 27px;
+}
