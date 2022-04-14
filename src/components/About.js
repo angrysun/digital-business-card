@@ -1,9 +1,11 @@
 export default function About() {
   return (
     <div className="center-body">
-      <h1 className="title-about">About</h1>
-      <p className="title-details">I'm a Tokyo based Fullstack Developer originally from New York City.
-        I enjoy programming because it provides a good test of my problem-solving skills as well as pushing my creativity to new heights.
+      <h1 className="header">About</h1>
+      <p className="about-content">I'm a Tokyo based Fullstack Developer originally from New York City.
+        I like using React because its flexible and has great performance because of Virtual DOMs.
+        React's reusable components make it easier to create webpages and sites will have faster load times.
+        And being able to write HTML directly in JavaScript code with JSX is very useful.
       </p>
     </div>
   )
