@@ -32,13 +32,9 @@ a {
   object-position: 100% 21%;
 }
 
-.title-name, .title-job, .title-sitename {
-  text-align: center !important;
-}
-
 .title-name {
-  line-height: 30px;
   font-size: 25px;
+  margin: 28px 0 0 0;
 }
 
 .title-job {
@@ -46,6 +42,7 @@ a {
   line-height: 4px;
   color: #ffcb9a;
   font-size: 18px;
+  margin-top: 12px;
 }
 
 .title-sitename {
@@ -56,7 +53,7 @@ a {
   font-size: 11px;
 }
 
-.button, #button-white, #button-linkedIn, .center-body {
+.info, .button, #button-white, #button-linkedIn, .center-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,18 +71,31 @@ a {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   margin: 16px 12px;
+  transition: .5s ease-in-out;
 }
 
 #button-linkedIn {
   background-color: #287fe5;
   color: white;
+  border: 1px solid #287fe5;
 }
+
+#button-white:hover {
+  background-color: #136366;
+  color: white;
+}
+
+#button-linkedIn:hover {
+  background-color: #1B59A0;
+  border: 1px solid #1B59A0;
+}
+
 
 .--fa-li-margin {
   margin: 0 10px 0 4px;
 }
 
-.center-body {
+.info, .center-body {
   flex-direction: column;
 }
 
@@ -114,4 +124,9 @@ footer {
   margin: 0 16px 0 16px;
   font-size: 34px;
   color: #918E9B;
+  transition: .5s ease-in-out;
+}
+
+#social-icon:hover {
+  color: #136366;
 }
