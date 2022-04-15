@@ -30,7 +30,7 @@ function App() {
       <Info />
       <ToggleButton
         onChange={toggleDarkMode}
-        icons={{ checked: '🔆', unchecked: '🌙' }}
+        icons={{ checked: '🌙', unchecked: '🔆' }}
         aria-label="Dark mode"
       />
       <About />
