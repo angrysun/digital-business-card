@@ -17,13 +17,15 @@ function App() {
 
     if (prefersDark) {
       setDarkMode(true);
+    } else {
+      setDarkMode(false);
     }
   }, []);
 
-  useEffect(() => {
-    // console.log(`Is in dark mode? ${darkMode}`);
-    localStorage.setItem("dbc-dark-mode", darkMode);
-  }, [darkMode]);
+  // useEffect(() => {
+  //   console.log(`Is in dark mode? ${darkMode}`);
+  //   localStorage.setItem("dbc-dark-mode", darkMode);
+  // }, [darkMode]);
 
   return (
     <div className="App" data-theme={darkMode ? "dark" : "light"}>
