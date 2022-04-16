@@ -80,6 +80,11 @@ video {
   color: var(--text-color);
 }
 
+.title-sitename:hover {
+  color: #136366;
+  text-decoration: underline;
+}
+
 .title-job, .header, .about-header {
   font-size: var(--sub-header-font-size);
 }
