@@ -5,6 +5,9 @@ import Footer from './components/Footer'
 import ToggleButton from './components/ToggleButton';
 import { useState, useEffect } from 'react';
 
+let Checked = () => <>🌙</>;
+let Unchecked = () => <>🔆</>;
+
 function App() {
   const storedDarkMode = JSON.parse(localStorage.getItem("dbc-dark-mode"));
   const [darkMode, setDarkMode] = useState(storedDarkMode);
@@ -17,6 +20,8 @@ function App() {
 
     if (prefersDark) {
       setDarkMode(true);
+      Checked = () => <>🔆</>;
+      Unchecked = () => <>🌙</>;
     } else {
       setDarkMode(false);
     }
@@ -32,7 +37,7 @@ function App() {
       <Info />
       <ToggleButton
         onChange={toggleDarkMode}
-        icons={{ checked: '🌙', unchecked: '🔆' }}
+        icons={{ checked: <Checked />, unchecked: <Unchecked /> }}
         aria-label="Dark mode"
       />
       <About />
