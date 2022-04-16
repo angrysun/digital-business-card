@@ -4,6 +4,9 @@
   --footer-bg-color: #d5d4d8;
   --image-grayscale: 0;
   --image-opacity: 100%;
+  --header-font-size: 28px;
+  --sub-header-font-size: 21px;
+  --content-font-size: 14px;
 }
 
 [data-theme="dark"] {
@@ -56,7 +59,7 @@ video {
 }
 
 .title-name {
-  font-size: 25px;
+  font-size: var(--header-font-size);
   margin: 28px 0 0 0;
 }
 
@@ -64,7 +67,7 @@ video {
   font-weight: 400;
   line-height: 4px;
   color: #ffcb9a;
-  font-size: 18px;
+  font-size: var(--sub-header-font-size);
   margin-top: 12px;
 }
 
@@ -73,8 +76,16 @@ video {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  font-size: 11px;
+  font-size: var(--content-font-size);
   color: var(--text-color);
+}
+
+.title-job, .header, .about-header {
+  font-size: var(--sub-header-font-size);
+}
+
+.title-sitename, .about-content, .interests-content {
+  font-size: var(--content-font-size);
 }
 
 .info, .button, #button-white, #button-linkedIn, .center-body {
@@ -126,7 +137,6 @@ video {
 
 .header, .about-header {
   width: 280px;
-  font-size: 18px;
   margin-bottom: 0;
   line-height: 24px;
 }
@@ -137,7 +147,6 @@ video {
 
 .about-content, .interests-content {
   width: 280px;
-  font-size: 11px;
   margin-top: 4px;
   line-height: 15px;
 }
